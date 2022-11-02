@@ -18,3 +18,19 @@ int main()
 	}
 	return 0;
 }
+
+//求最小公倍数
+#include<stdio.h>
+
+int LCM(int x,int y);
+int main()
+{
+	int a,b,lcm;
+	printf("Please input a and b:");
+	scanf("%d%d",&a,&b);
+
+	lcm = LCM(a,b);
+
+	printf("%d\n",lcm);
+	return 0;
+}
