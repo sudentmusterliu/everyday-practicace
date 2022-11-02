@@ -34,3 +34,21 @@ int main()
 	printf("%d\n",lcm);
 	return 0;
 }
+
+//求1到n之间所有数的阶乘
+#include<stdio.h>
+int Fact(int x);
+
+int main()
+{
+	int i,n,cm;
+	printf("Please input n:");
+	scanf("%d",&n);
+
+	for(i=1;i<=n;i++)
+	{
+		cm = Fact(i);
+		printf("%d\n",cm);
+	}
+	return 0;
+} 
