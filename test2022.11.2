@@ -1,36 +1,16 @@
-//打印出九九乘法表
-#include<stdio.h>
-
-int main()
+/*
+函数作用：求最小公倍数
+参数：
+参数一；其中一个参数
+参数二：另外一个参数
+*/
+int LCM(int x,int y)
 {
-	int n,i,p;
-
-	p=1;
-	
-	for(n=1;n<=9;n++)
+	int m;
+	m = 0;
+	do
 	{
-		for(i=1;i<=9;i++)
-		{
-			p = n * i;
-			printf("%d ",p);
-		}
-		printf("\n");
-	}
-	return 0;
-}
-
-//求最小公倍数
-#include<stdio.h>
-
-int LCM(int x,int y);
-int main()
-{
-	int a,b,lcm;
-	printf("Please input a and b:");
-	scanf("%d%d",&a,&b);
-
-	lcm = LCM(a,b);
-
-	printf("%d\n",lcm);
-	return 0;
+		m++;
+	}while(m%x != 0 || m%y != 0);
+	return m;
 }
